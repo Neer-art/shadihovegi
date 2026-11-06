@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/lakshmi-devender-royal-burgundy/$1"
+    }
+  ]
+}
