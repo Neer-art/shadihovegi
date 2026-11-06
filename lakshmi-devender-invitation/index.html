@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#310b17" />
+  <meta name="description" content="A royal wedding invitation celebrating Lakshmi and Devender, 12–13 December 2026, Rohtak." />
+  <title>Lakshmi & Devender | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain"></div>
+  <button class="sound-toggle" id="soundToggle" aria-label="Toggle music">♫ <span>Music</span></button>
+  <audio id="weddingMusic" loop preload="none">
+    <!-- Add your own royalty-free instrumental as assets/music.mp3 to enable background music. -->
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section class="intro-screen" id="introScreen">
+      <div class="intro-frame">
+        <div class="intro-ornament">❧</div>
+        <p class="eyebrow">A royal celebration of love</p>
+        <p class="intro-blessing">॥ श्री गणेशाय नमः ॥</p>
+        <h1>Lakshmi <span>&</span> Devender</h1>
+        <div class="gold-rule"><i></i> ✦ <i></i></div>
+        <p class="intro-date">12 — 13 December 2026 · Rohtak</p>
+        <button class="open-invite" id="openInvite">Open Invitation <span>↗</span></button>
+        <p class="tiny-note">A day woven with blessings, joy & forever</p>
+      </div>
+      <div class="intro-corner corner-tl">✦</div><div class="intro-corner corner-br">✦</div>
+    </section>
+
+    <div class="site-content" id="siteContent" aria-hidden="true">
+      <header class="topbar">
+        <a class="brand" href="#home">L <span>&</span> D</a>
+        <nav><a href="#story">Our Invitation</a><a href="#events">Celebrations</a><a href="#venue">Venue</a></nav>
+        <a class="nav-rsvp" href="#rsvp">RSVP</a>
+      </header>
+
+      <section class="hero" id="home">
+        <div class="hero-glow"></div>
+        <p class="eyebrow reveal">॥ श्री गणेशाय नमः ॥</p>
+        <p class="hero-kicker reveal">Together with our families</p>
+        <h2 class="hero-names reveal">Lakshmi <em>&</em><br>Devender</h2>
+        <div class="gold-rule reveal"><i></i> ♥ <i></i></div>
+        <p class="hero-date reveal">Sunday, 13th December 2026</p>
+        <p class="hero-place reveal">Rohtak, Haryana</p>
+        <a class="scroll-cue" href="#story">Scroll to celebrate <span>↓</span></a>
+      </section>
+
+      <section class="invitation section-pad" id="story">
+        <div class="section-heading reveal"><p class="eyebrow">With the blessings of our elders</p><h2>A beautiful beginning</h2><div class="ornament-line">❧</div></div>
+        <p class="invitation-copy reveal">With immense joy and the blessings of the Almighty,</p>
+        <p class="invitation-copy reveal">we request the honour of your gracious presence</p>
+        <p class="invitation-copy reveal">at the auspicious wedding ceremony of</p>
+        <div class="couple-card reveal">
+          <img src="assets/ai-bride-groom.jpg" alt="AI-generated Indian bride in a maroon bridal lehenga and groom in an ivory sherwani with a maroon turban" />
+          <div class="photo-caption">A promise of forever</div>
+        </div>
+        <div class="couple-names reveal">
+          <div><span class="role">The Bride</span><h3>Lakshmi</h3><p>D/o Smt. Kamlesh &<br>Sh. Joginder Nainwaya</p></div>
+          <div class="ampersand">&</div>
+          <div><span class="role">The Groom</span><h3>Devender</h3><p>S/o Smt. Jyoti &<br>Sh. Vikram Singh</p></div>
+        </div>
+      </section>
+
+      <section class="countdown-section">
+        <p class="eyebrow">The countdown to forever</p><h2>Save the date</h2>
+        <div class="countdown" id="countdown">
+          <div><strong id="days">--</strong><span>Days</span></div><b>:</b><div><strong id="hours">--</strong><span>Hours</span></div><b>:</b><div><strong id="minutes">--</strong><span>Minutes</span></div><b>:</b><div><strong id="seconds">--</strong><span>Seconds</span></div>
+        </div>
+        <p class="countdown-date">12–13 December 2026</p>
+      </section>
+
+      <section class="events section-pad" id="events">
+        <div class="section-heading reveal"><p class="eyebrow">The wedding festivities</p><h2>Join our celebrations</h2><div class="ornament-line">❧</div></div>
+        <div class="event-grid">
+          <article class="event-card reveal"><span class="event-number">01</span><p class="event-day">Saturday · 12 December 2026</p><h3>Ladies Sangeet</h3><p class="event-time">7:00 PM</p><span class="event-icon">✧</span></article>
+          <article class="event-card reveal"><span class="event-number">02</span><p class="event-day">Sunday · 13 December 2026</p><h3>Chakk-Bhaat</h3><p class="event-time">11:00 AM</p><span class="event-icon">❀</span></article>
+          <article class="event-card reveal"><span class="event-number">03</span><p class="event-day">Sunday · 13 December 2026</p><h3>Reception of Barat</h3><p class="event-time">7:00 PM</p><span class="event-icon">✧</span></article>
+          <article class="event-card reveal"><span class="event-number">04</span><p class="event-day">Sunday · 13 December 2026</p><h3>Dinner</h3><p class="event-time">8:00 PM</p><span class="event-icon">❀</span></article>
+        </div>
+        <p class="doli-note reveal">Doli · Taaron Ki Chhaon Mein</p>
+      </section>
+
+      <section class="venue-section" id="venue">
+        <div class="venue-content reveal"><p class="eyebrow">The celebration awaits</p><h2>Find your way<br>to our hearts</h2><div class="gold-rule"><i></i> ✦ <i></i></div><p class="venue-name">Community Centre</p><p>Kanheli Road, Rohtak<br>Haryana, India</p><a class="outline-button" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Community+Centre+Kanheli+Road+Rohtak">View on Google Maps ↗</a></div>
+      </section>
+
+      <section class="family-section section-pad">
+        <div class="section-heading reveal"><p class="eyebrow">With love and blessings</p><h2>Our families</h2><div class="ornament-line">❧</div></div>
+        <div class="family-columns reveal">
+          <div><span class="role">Bride's family</span><h3>Nainwaya Family</h3><p>Smt. Angoori Devi & Sh. Jai Bhagwan Nainwaya</p><p>Smt. Kamlesh & Sh. Joginder Nainwaya</p></div>
+          <div><span class="role">Groom's family</span><h3>Singh Family</h3><p>Smt. Jyoti & Sh. Vikram Singh</p><p>R/o VPO Kasan, Manesar, Gurugram</p></div>
+        </div>
+        <p class="special-invite reveal">Special invitation from our family shining stars</p>
+        <p class="family-stars reveal">Punit · Gaurav · Garvit · Devika · Rishika</p>
+      </section>
+
+      <section class="rsvp-section" id="rsvp">
+        <p class="eyebrow reveal">Your presence is our present</p><h2 class="reveal">We can't wait to celebrate with you</h2>
+        <p class="rsvp-contact reveal">For greetings & details</p>
+        <div class="phone-links reveal"><a href="tel:9992099724">99920 99724</a><span>✦</span><a href="tel:9306142368">93061 42368</a></div>
+        <p class="address reveal">A cordial invitation from<br><strong>Sh. Joginder Nainwaya</strong><br>855/22, Vijay Nagar, Near Jhajjar Chungi, Rohtak</p>
+        <div class="rsvp-names reveal"><span>With warm regards</span><p>Balwan · Satish Kumar · Ravinder Kumar<br>Anil Kumar · Sunil · Vicky · Amit · Naveen · Neeraj</p></div>
+        <a class="gold-button reveal" href="https://wa.me/919992099724?text=Namaste%2C%20I%20am%20happy%20to%20celebrate%20the%20wedding%20of%20Lakshmi%20%26%20Devender.%20Best%20wishes!" target="_blank" rel="noopener">Send your wishes on WhatsApp</a>
+      </section>
+      <footer><div class="footer-monogram">L <span>&</span> D</div><p>Made with love for Lakshmi & Devender</p><small>12 — 13 December 2026 · Rohtak</small></footer>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
